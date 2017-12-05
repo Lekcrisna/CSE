@@ -67,9 +67,9 @@ def f(x):
 # if statements
 
 
-# def grade_calc(percentage):
-#     if percentage >= 90:
-#         return "A"
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
 #     elif percentage >= 80: #Else if
 #         return "B"
 #     elif percentage >=70:
@@ -101,3 +101,18 @@ print("Hello \nWorld") #\n means a newline
 
 import random # IMPORTS should be at the top
 print(random.randint(0,6))
+
+
+#camparisons
+print(1 == 1)  #Two equal to compare
+print(1 != 2)  #One is not equal to 2
+print (not False)  #This prints true
+print(1 == 1 and 4 <= 5)
+print(1 < 0 or 5  > 1)
+
+
+#Recasting
+c = '1'
+print(c == 1)  #False - C is a string, 1 is an interger
+print(int(c) == 1)  #True - compares two ints
+print(c == str(1))  #True - Compare two strings
