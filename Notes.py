@@ -57,19 +57,19 @@
 # Press Ctrl-A and Crtl-/
 # to comment old code
 
-def f(x):
-    return x**5 + 4 * x**2 + 4 - 17*x**2 + 4
+# def f(x):
+#     return x**5 + 4 * x**2 + 4 - 17*x**2 + 4
 
 
 # print(f(3))
 # print(f(3) + f(5))
 
 # if statements
-
-
-def grade_calc(percentage):
-    if percentage >= 90:
-        return "A"
+#
+#
+# def grade_calc(percentage):
+#     if percentage >= 90:
+#         return "A"
 #     elif percentage >= 80: #Else if
 #         return "B"
 #     elif percentage >=70:
@@ -88,31 +88,63 @@ def grade_calc(percentage):
 # for mystery in "Hello World":
 #     print(mystery)
 
-a = 1
-while a < 10:
-    print(a)
-    a+= 1
+# a = 1
+# while a < 10:
+#     print(a)
+#     a+= 1
 
-response = ""
+# response = ""
 # while response != "Hello":
-#     response = input("Say \"Hello\"")
-
-print("Hello \nWorld") #\n means a newline
-
-import random # IMPORTS should be at the top
-print(random.randint(0,6))
+# #     response = input("Say \"Hello\"")
+#
+# print("Hello \nWorld") #\n means a newline
+#
+# import random # IMPORTS should be at the top
+# print(random.randint(0,6))
 
 
 #camparisons
-print(1 == 1)  #Two equal to compare
-print(1 != 2)  #One is not equal to 2
-print (not False)  #This prints true
-print(1 == 1 and 4 <= 5)
-print(1 < 0 or 5  > 1)
+# print(1 == 1)  #Two equal to compare
+# print(1 != 2)  #One is not equal to 2
+# print (not False)  #This prints true
+# print(1 == 1 and 4 <= 5)
+# print(1 < 0 or 5  > 1)
 
 
 #Recasting
-c = '1'
-print(c == 1)  #False - C is a string, 1 is an interger
-print(int(c) == 1)  #True - compares two ints
-print(c == str(1))  #True - Compare two strings
+# c = '1'
+# print(c == 1)  #False - C is a string, 1 is an interger
+# print(int(c) == 1)  #True - compares two ints
+# print(c == str(1))  #True - Compare two strings
+
+# lists
+
+the_count = (1, 2, 3, 4, 5)
+characters = ["graves", "Dory", "Boots", "Dora","Shrek","Obi-wan", "Carl"]
+print(characters[1])
+print(characters[4])
+
+print(len(characters))
+
+#Going through lists
+for char in characters:
+    print(char)
+
+    for num in the_count:
+        print(num ** 2)
+
+len(characters)
+range(3) #makes a list of the numbers from 0 to 2
+range(len(characters)) #makes a list of all indices
+
+for num in range(len(characters)):
+    char = characters[num]
+    print("The character of index %d is %s" %(num, char))
+
+str1 = "Hello World!"
+listOne = list(str1)
+print(listOne)
+listOne[11] = '.'
+print(listOne)
+newStr = "  ".join(listOne)
+print(newStr)
