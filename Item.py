@@ -32,7 +32,11 @@ class Knife(object):
             self.pick_up = True
             print('You do not pick up the knife')
 
+<<<<<<< HEAD
 class Gun(object):
+=======
+class AR15(object):
+>>>>>>> fb1628cb2b3b926c3d8db91cca39808ae61174a4
     def __init__(self, description):
         super(Item, self, description)
 
@@ -46,6 +50,7 @@ class Chest_Key(object):
 
 class Armor(object):
     def __init__(self):
+<<<<<<< HEAD
         super(Armor, self).__init__()
 
 class Sword(object):
@@ -66,3 +71,6 @@ class Ramen(object):
         super(Ramen, self).__init__()
 
 class
+=======
+        super(Armor, self).__init__()
+>>>>>>> fb1628cb2b3b926c3d8db91cca39808ae61174a4
