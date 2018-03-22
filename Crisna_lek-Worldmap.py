@@ -79,8 +79,12 @@ world_map = {
             'DOWN': 'INTERSECT ROOM'
         }
     },
-
-}
+    'WEST': 'ROOM',
+    'DESCRIPTION': 'This room is useless it has no use it does nothing ',
+    'PATHS': {
+        'TRAPPED': 'You cant leave you have nowhere to go you have to restart'
+        }
+    },
 current_node = world_map['MANSION']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
 
