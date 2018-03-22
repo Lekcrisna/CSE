@@ -43,3 +43,7 @@ class Key(object):
 class Chest_Key(object):
     def __init__(self, description):
         super(Item, description)
+
+class Armor(object):
+    def __init__(self):
+        super(Armor, self).__init__()
