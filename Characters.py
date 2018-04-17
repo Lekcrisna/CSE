@@ -41,5 +41,3 @@ class Character(object):
     def attack(self):
         if Character.attack:
             print("YOu attack")
-
-            
