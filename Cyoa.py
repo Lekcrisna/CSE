@@ -124,6 +124,7 @@ class Character(property):
 
     def damage(self):
         print('you get damage')
+        super(Character, self).damage()
 
     def attack(self):
         if Character.attack:
@@ -150,20 +151,19 @@ self = Room('CENTER AREA', 'PORCH', 'DEAD END', 'nothing', 'FOREST/SIDE YARD', '
                                                                                'in a room and you also find some '
                                                                                'shiny object like a key to some door.')
 
-self = Room('SIDE YARD', 'TREES', 'CENTER AREA', 'TREES', 'TREES', 'The side or forest area only has trees everywhere'
-                                                                   'you look is just trees you can only go back the '
-                                                                   'way you came from.')
+bedroom = Room('SIDE YARD', 'TREES', 'CENTER AREA', 'TREES', 'TREES', 'You only see trees and you cant go anywhere else'
+                                                                      'so you just go back to where you came from')
 
-self = Room('KITCHEN', 'WALL', 'WALL', 'WALL', 'SMALL LIVING ROOM', 'Its a normal kitchen you find a piece of bread,'
-                                                                    'The piece of bread looks fresh')
+Kitchen = Room('KITCHEN', 'WALL', 'WALL', 'WALL', 'SMALL LIVING ROOM', 'A kitchen where you can find some food like'
+                                                                       'bread  you eat it and it taste good.')
 
-self = Room('Restroom', 'A wall', ' side room', 'room', 'wall', 'A restroom where you find a sort of item'
-                                                                'and you can use the restroom')
+Restroom = Room('Restroom', 'A wall', ' side room', 'room', 'wall', 'A restroom where you find a sort of item'
+                                                                    'and you can use the restroom')
 
-self = Room('Bedroom', 'Room', 'some stairs', 'room', 'wall', ' A bedroom where you can sleep and do this thing where '
-                                                              'you take a nap.')
+bedroom = Room('Bedroom', 'Room', 'some stairs', 'room', 'wall', ' A bedroom where you can sleep')
 
-self = Room('Master Bedroom', 'door', 'wall', 'wall')
+room = Room('Master Bedroom', 'door', 'wall', 'wall', 'This is the master bedroom it takes a while to open the door but'
+                                                      'you eventually get it to open you so a bunch of things like ')
 
 
 current_node = Room
